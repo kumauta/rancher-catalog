@@ -1,0 +1,16 @@
+version: '2'
+catalog:
+  name: "Gokyu"
+  version: "v0.1"
+  description: "Gokyu kengi"
+  minimum_rancher_version: v0.9.0
+  minimum_rancher_version: # The minimum version of Rancher that supports the template, v1.0.1 and 1.0.1 are acceptable inputs
+services:
+  gokyu:
+    scale: 1
+    health_check:
+      port: 80
+      interval: 2000
+      unhealthy_threshold: 3
+      healthy_threshold: 2
+      response_timeout: 2000

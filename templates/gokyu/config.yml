@@ -1,0 +1,7 @@
+name: Gokyu
+description: |
+  Gokyu kengi
+version: 0.1
+category: joke
+maintainer: kumauta
+projectURL: https://hub.docker.com/r/kumauta/gokyu/

@@ -1,0 +1,10 @@
+version: '2'
+services:
+  gokyu:
+    image: kumauta/gokyu
+    tty: true
+    stdin_open: true
+    labels:
+      io.rancher.container.hostname_override: container_name
+    ports:
+    - 8888:80
